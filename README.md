@@ -44,4 +44,6 @@ where `<model-name>` and `<dataset-name>` refer to the name of the model to be r
 
 You may find all configutation files at `./config_files/<model-name>/<dataset-name>.yml`, where all hyperparameter spaces and the exploration strategies are reported.
 
+**[IMPORTANT]** for graph models with explicit message-passing, you may refer to configuration files contained in the folder pattern `./config_files/<layer-n>/<dataset-name>.yml`, where `n` is the number of explored hops. In this way, you will run all graph models with exploration at `n` hops. Conversely, models without explicit message-passing follow the usual notation as explained above.
+
 Results about calculated metrics are available in the folder `./results/<dataset-name>/performance/`. Specifically, you need to access the tsv file having the following name pattern: `rec_cutoff_<cutoff>_relthreshold_0_<datetime-experiment-end>.tsv`.
