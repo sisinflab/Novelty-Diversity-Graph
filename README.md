@@ -32,3 +32,16 @@ After the setup of your Docker containers, you may follow the exact same guideli
 
 ### Datasets
 At `./data/` you may find all tsv files for the datasets, i.e., training, validation, and test sets. 
+
+### Training and testing models
+To train and evaluate models an all considered metrics, you may run the following command:
+
+```
+$ python -u start_experiments.py --model <model-name> --dataset <dataset-name>
+```
+
+where `<model-name>` and `<dataset-name>` refer to the name of the model to be run and the dataset on which to run the experiment, respectively.
+
+You may find all configutation files at `./config_files/<model-name>/<dataset-name>.yml`, where all hyperparameter spaces and the exploration strategies are reported.
+
+Results about calculated metrics are available in the folder `./results/<dataset-name>/performance/`. Specifically, you need to access the tsv file having the following name pattern: `rec_cutoff_<cutoff>_relthreshold_0_<datetime-experiment-end>.tsv`.
