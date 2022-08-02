@@ -1,6 +1,6 @@
 # How Neighborhood Exploration influences Novelty and Diversity in Graph Collaborative Filtering
 
-This is the official implementation of the paper _How Neighborhood Exploration influences Novelty and Diversity in Graph Collaborative Filtering_, under review as short paper at CIKM 2022.
+This is the official implementation of the paper _How Neighborhood Exploration influences Novelty and Diversity in Graph Collaborative Filtering_, under review as short paper at MORS@RecSys2022.
 
 This repository is heavily dependent on the framework **Elliot**, so we suggest you refer to the official GitHub [page](https://github.com/sisinflab/elliot) and [documentation](https://elliot.readthedocs.io/en/latest/).
 
